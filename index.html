@@ -393,6 +393,48 @@ th{
 .section-head{
     max-width:700px;
 }
+.hero{
+    min-height:100vh;
+    padding:90px 0 30px;
+    display:flex;
+    align-items:center;
+}
+.hero-grid{
+    gap:30px;
+}
+h1{
+    margin-bottom:18px;
+}
+.hero p.lede{
+    margin-bottom:22px;
+}
+.hero-stats{
+    margin-top:24px;
+}
+svg.chip{
+    width:100%;
+    max-width:560px;
+}
+.gpu-glow{
+    width:480px;
+    height:480px;
+}
+.gpu-stage{
+    transform:translateX(-20px);
+}
+h1{
+    font-size:clamp(44px,5.8vw,72px);
+}
+.hero .container{
+    padding-left:8px;
+    padding-right:32px;
+}
+h1{
+    transform:translateX(-20px);
+}
+.hero-grid > div:first-child{
+    transform:translateX(-20px);
+}
 </style>
 </head>
 <body>
@@ -419,7 +461,6 @@ th{
   <div class="particles" id="particles"></div>
   <div class="container hero-grid">
     <div>
-      <div class="eyebrow fade-up" style="animation-delay:.15s">Live hardware telemetry</div>
       <h1 class="fade-up" style="animation-delay:.25s">See exactly what your <em>GPU</em> is doing, in real time.</h1>
       <p class="lede fade-up" style="animation-delay:.35s">Core reads temperature, load, memory pressure and power draw straight off the die and turns it into diagnostics you can actually act on — before a thermal event becomes downtime.</p>
       <div class="hero-actions fade-up" style="animation-delay:.45s">
